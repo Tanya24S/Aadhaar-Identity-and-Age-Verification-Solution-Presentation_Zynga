@@ -50,37 +50,28 @@ You can use the provided environment file:
 ```bash
 conda env create -f environment.yml
 conda activate zynga_env
-Or install manually:
 
-bash
-Copy
-Edit
+Or install manually:
 pip install torch torchvision torchaudio facenet-pytorch opencv-python pytesseract streamlit
+
 🚀 Run the App
-bash
-Copy
-Edit
 streamlit run main.py
 Then open your browser at http://localhost:8501.
 
 📁 Folder Structure
-graphql
-Copy
-Edit
 Zynga/
 │
 ├── main.py                      # Streamlit frontend
-├── environment.yml              # Optional Conda environment
+├── environment.yml   
 ├── utils/
 │   ├── age_check.py             # Age verification logic
 │   ├── face_compare.py          # Embedding + similarity logic
 │   ├── face_detect.py           # Face extraction using MTCNN
 │   ├── ocr.py                   # OCR to extract DOB
+
 ⚠️ Notes
 Make sure your webcam permissions are enabled in your browser
-
 Tesseract must be installed and its path set correctly
-
 No personal data is stored — everything is done locally for demo purposes
 
 👥 Team
